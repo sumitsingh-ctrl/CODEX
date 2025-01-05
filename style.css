@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+  background: linear-gradient(to right, #f2f2f7, #a3c2c2); /* Soft gradient background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a4a4a;
+}
+
+/* Login and Registration Section */
+#login-section, #register-section {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Soft white background for forms */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+  background-color: #5c6bc0; /* Soft blue */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3f51b5; /* Darker blue */
+  cursor: pointer;
+}
+
+/* Form Inputs */
+input {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  width: 100%;
+}
+
+input:focus {
+  border-color: #5c6bc0;
+  outline: none;
+}
+
+/* Game Section */
+#game-section {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tic-tac-toe-game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#tic-tac-toe-game button {
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  background-color: #f1f1f1;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  color: #333; /* Dark color for X and O */
+  font-weight: bold;
+}
+
+#tic-tac-toe-game button:hover {
+  background-color: #f2f2f7;
+  cursor: pointer;
+}
+
+/* Game Status */
+#game-status {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4caf50; /* Success green */
+}
+
+#reset-game {
+  background-color: #ff9800; /* Soft orange */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+
+#reset-game:hover {
+  background-color: #f57c00; /* Darker orange */
+}
+
+#logout {
+  background-color: #e57373; /* Soft red */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+
+#logout:hover {
+  background-color: #d32f2f; /* Darker red */
+}
+
+/* Heading Style */
+h3 {
+  color: #5c6bc0;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Link Style */
+a {
+  color: #5c6bc0;
+}
+
+a:hover {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  #login-section, #register-section, #game-section {
+      padding: 15px;
+  }
+
+  #tic-tac-toe-game {
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
+  }
+
+  #tic-tac-toe-game button {
+      height: 80px;
+      width: 80px;
+      font-size: 18px;
+  }
+}
