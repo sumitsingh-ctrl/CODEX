@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Container -->
+    <div class="container" id="login-container">
+        <h2>Tic Tac Toe - Login</h2>
+        <div class="form-container">
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="form-control" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" class="form-control" required>
+                <button type="submit" class="btn btn-success btn-block">Login</button>
+            </form>
+        </div>
+        <p>Don't have an account? <a href="#" onclick="showRegistration()">Register here</a></p>
+    </div>
+
+    <!-- Registration Container -->
+    <div class="container" id="register-container" style="display: none;">
+        <h2>Tic Tac Toe - Register</h2>
+        <div class="form-container">
+            <form id="register-form">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" class="form-control" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" class="form-control" required>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+        </div>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+    </div>
+
+    <!-- Game Container -->
+    <div class="container game-container" id="game-container" style="display: none;">
+        <h2>Tic Tac Toe</h2>
+        <div id="game-board" class="board"></div>
+        <button id="reset" class="btn btn-purple btn-block" onclick="resetGame()">Reset Game</button>
+        <label for="game-mode">Select Game Mode:</label>
+        <select id="game-mode" class="form-control" onchange="setGameMode()">
+            <option value="two-player">Two Player</option>
+            <option value="one-player">One Player</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
